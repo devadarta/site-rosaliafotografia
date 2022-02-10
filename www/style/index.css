@@ -1,20 +1,18 @@
-/* @import */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
-	color: white;
-	/* box-sizing: border-box;
-	font-size: 1rem;
-	font-family: Arial;*/
+	box-sizing: border-box;
+	font-size: 19px;
+	color: black;
+	background-color: rgb(255, 255, 255);
 }
 
 body {
-	font-size: 16px;
-	background: black;
-	/* background: linear-gradient(68.15deg, #456789 16.62%, #654312 85.61%); */
+	font-family: 'Baloo 2', cursive;
 }
 
 img{
@@ -28,27 +26,26 @@ img{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	/*background: black;
-*/	
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 1rem;
 }
 
-.header__link {
-	padding: 1rem;
+.header__logo {
+	padding: 0.3rem;
+	border-style: groove;
+	border-width: thin;
+	font-variant: small-caps;
 }
 
 .menu-list {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 0.1rem;
-	font-size: 1rem;
 }
 
-
 .menu__item {
-	padding: 0.6rem;
+	padding: 0.3rem;
 }
 
 .content {
@@ -77,6 +74,14 @@ img{
 .info--justify {
 	text-align: justify;
 	line-height: 1.7rem;
+}
+
+.about__title {
+		font-size: 1.8rem;
+}
+
+.about__sub-title {
+		font-size: 0.9rem;
 }
 
 .about__text {
@@ -117,15 +122,15 @@ img{
 .portfolio__header {
 	/*background: #678901;
 	*/padding: 1rem;
-	
+
 }
 
 .portfolio__title{
-	
+
 }
 
 .portfolio__sub-title{
-	
+
 }
 
 .portfolio__item{
@@ -139,3 +144,12 @@ img{
 	flex: 1 1 300px;
 	margin: 10px;
 }
+
+
+@media screen and (prefers-color-scheme: dark) {
+		/* Dark mode styles */
+		*{
+			color: rgb(201, 209, 217);
+			background: rgb(13, 17, 23);
+		}
+	}
