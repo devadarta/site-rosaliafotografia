@@ -1,91 +1,136 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Rosália Fotografia Home</title>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/> <!-- Setting the viewport to make your website look good on all devices: -->
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/> <!-- Tipo do conteúdo do site -->
-		<link rel="icon" type="images/x-icon" href="style/assets/favicon.svg"/> <!-- Favicon estudar -->
-		<link rel="stylesheet" type="text/css" href="style/index.css"/>
-	<!--	<link rel="stylesheet" media="all" crossorigin="anonymous" type="text/css"  href="index.css"/>-->
-		<link rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
+<HTML lang="pt-br">
 
-	<body>
-		<header class="header">
-			<a class="header__logo" href="nindex.html">rosalia augusta fotografia</a>
-			<nav class="header__menu">
-				<ul class="menu-list">
-					<li class="menu__item menu__text"><a>Portfólio</a></li>
-					<li class="menu__item menu__text"><a>Contato</a></li>
-					<li class="menu__item menu__img"><a href="https://www.instagram.com/rosaliafotografia" title="This is an HTML liked image"><img src="style/assets/instagram.svg" alt="Instagram" height=28px width=28px/></a></li>
-					<li class="menu__item menu__img"><a href="" title="[rosalia's youtube link]"><img src="style/assets/youtube.svg" alt="Youtube" height=28px width=28px/></a></li>
-					<li class="menu__item menu__img"><a href="" title="[rosalia's telegram link]"><img src="style/assets/telegram.svg" alt ="Telegram" height=28px width=28px/></a></li>
-					<li class="menu__item menu__img"><a href="mailto:rosaliafotografia@gmail" title="This is an HTML liked image"><img src="style/assets/email.svg" alt="E-mail" height=28px width=28px/></a></li>
-				</ul>
-			</nav>
-		</header>
+<head>
+	<title>Rosália Fotografia Home</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="content-type" content="text/html" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-		<main class="content">
-			<section class="info">
-				<div class="info__about info--justify info--space">
-					<h1 class="about__title">Rosália Benvegnú</h1>
-					<p><a class="about__sub-title" href="mailto:rosaliafotografia@gmail.com?subject=Contato pelo nosso website&body=Esrceva uma mensagem bacana aqui ;)">rosaliafotografia@gmail.com</a></p>
-					<p class="about__text">
-						Sou a Rosália, uma pessoa autêntica e observadora que aprecia as singularidades da vida. Antes de ingressar no mercado da fotografia profissional, me graduei em engenharia e também cursei uma especialização em gestão da moda. Porém, a fotografia sempre me chamou... E cá estou!
-					</p>
-					<p class="about__text">
-						Me conectar com pessoas que buscam a sua verdade é a motivação para continuar nessa jornada.
-					</p>
-					<p class="about__text">
-						O que intenciono através da fotografia?
-						Revelar a melhor versão de cada ser. Através do meu olhar e da minha lente capturo cada momento pessoal. Acredito que uma imagem pode fazer alguém enxergar a si de outra maneira especial.
-					</p>
-					<p class="about__text">Vamos nessa? :)</p>
+	<link rel="icon" type="images/x-icon" href="assets/favicon.svg" />
+	<link rel="stylesheet" type="text/css" href="styles/index.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
+	<script src="scripts/theme.js" defer></script>
+	<script src="scripts/gallery.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<a class="header__logo" href="index.html">rosalia augusta fotografia</a>
+		<nav class="header__menu">
+			<ul class="menu-list">
+				<li class="menu__item item-text">
+					<a href="#about">Sobre</a>
+				</li>
+				<li class="menu__item">
+					<a href="https://wa.me/5554999123279?text=Olá!%20Gostaria%20de%20conheçer%20seu%20trabalho." class="whatsapp-link">
+						<i class="fa fa-whatsapp" aria-hidden="true" title="zap-me"></i>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a href="https://instagram.com/rosaliafotografia" class="instagram-link">
+						<i class="fa fa-instagram" aria-hidden="true" title="veja mais conteúdo no meu instagram"></i>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a href="https://www.facebook.com/rosaliaaugustafotografia/" class="facebook-link">
+						<i class="fa fa-facebook" aria-hidden="true" title="minha página no facebook"></i>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a href="mailto:rosaliaafotografia@gmail.com?subject=Contato pelo site&body=Escreva uma mensagem bacana aqui ;)" class="email-link">
+						<i class="fa fa-envelope-o" aria-hidden="true" title="me envie um e-mail"></i>
+					</a>
+				</li>
+				<li class="menu__item">
+					<i class="fa fa-sun theme-title" aria-hidden="true" style="font-size:22px;" onclick="toggleTheme();"></i>
+					<!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" onclick="toggleTheme();" fill="currentColor" class="bi bi-circle-half theme-title" viewBox="0 0 16 16">
+						<title class="item__theme-title">Tema Claro</title>
+						<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+					</svg> -->
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="gallery-section">
+			<input class="radio" type="radio" name="galeria" id="rd-todos" checked />
+			<input class="radio" type="radio" name="galeria" id="rd-pessoal" />
+			<input class="radio" type="radio" name="galeria" id="rd-moda" />
+			<input class="radio" type="radio" name="galeria" id="rd-estudio" />
+			<input class="radio" type="radio" name="galeria" id="rd-corporativo" />
+			<!-- BUG: Quando atualiza a página fica selecionado o último filtro utilizado. Não encontrei solução -->
+			<div class="gallery__filters" id="filters">
+				<label class="filter-label todos" id="lb-todos" for="rd-todos">Todas</label>
+				<label class="filter-label pessoal" id="lb-pessoal" for="rd-pessoal">Produção Pessoal</label>
+				<label class="filter-label moda" id="lb-moda" for="rd-moda">Fotografia de Moda</label>
+				<label class="filter-label estudio" id="lb-estudio" for="rd-estudio">Estudio</label>
+				<label class="filter-label corporativo" id="lb-corporativo" for="rd-corporativo">Retrato Corporativo</label>
+				<!-- <label class="filter-label gestante" id="lb-gestante" for="rd-gestante">Gestante</label> -->
+			</div>
+			<div class="gallery-container">
+				<div id="gallery"></div>
+			</div>
+
+			<div id="popup-container">
+				<button class="arrow-button" id="btn-previous" accesskey="p">
+					<div class="left-arrow"></div>
+				</button>
+				<img id="selected-image" />
+				<button class="arrow-button next-button" id="btn-next" accesskey="n">
+					<div class="right-arrow"></div>
+				</button>
+				<button type="button" id="btn-close" accesskey="q">
+					<div class="right-arrow"></div>
+					<div class="left-arrow"></div>
+				</button>
+			</div>
+		</section>
+
+		<section class="info-section">
+			<div class="polaroid-container">
+				<div title="Rosália Benvegnú">
+					<img src="galeria/Diamante_Rosalia_2.jpg" alt="Foto de Rosália Benvegnú" title="Rosália Benvegnú" />
 				</div>
+			</div>
 
-				<div class="info__contact info--justify">
-					<h2 class="contact__title">Contato</h2>
-					<br>
-					<p class="contact__text">Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!Quem num gosta di mé, boa gentis num é.Manduma pindureta quium dia nois paga.Si num tem leite então bota uma pinga aí cumpadi!</p>
-
-					<div class="contact__whatsapp">
-						<button class="whatsapp-button" style="font-size:16px">Zap-me <i class="fa fa-whatsapp"></i></button>
-					</div>
+			<div id="about" class="info__about-container">
+				<h2>Olá! (:</h2>
+				<a class="about__sub-title" href="mailto:rosaliaafotografia@gmail.com?subject=Contato pelo site&body=Escreva uma mensagem bacana aqui ;)">rosaliaafotografia@gmail.com</a>
+				<p class="about__text">
+					Sou a Rosália, uma pessoa autêntica e observadora que aprecia as singularidades da vida. Antes de ingressar no mercado da fotografia profissional, me graduei em engenharia e também cursei uma especialização em gestão da moda. Porém, a
+					fotografia sempre me chamou... E cá estou!
+					<br /><br />
+					Me conectar com pessoas que buscam a sua verdade é a motivação para continuar nessa jornada.
+					<br /><br />
+					O que intenciono através da fotografia?
+					Revelar a melhor versão de cada ser. Através do meu olhar e da minha lente capturo cada momento pessoal. Acredito que uma imagem pode fazer alguém enxergar a si de outra maneira especial.
+					<br /><br />
+					Vamos juntos nessa? Compartilhe sua ideia comigo!
+				</p>
+				<div class="contato-container">
+					<a href="https://wa.me/5554999123279?text=Olá!%20Gostaria%20de%20conheçer%20seu%20trabalho.">
+						<p class="wpp-phone">WhatsApp +55 54 99912-3279</p>
+						<!-- WhatsApp +55 54 99912-3279 -->
+					</a>
 				</div>
-			</section>
+			</div>
+		</section>
+	</main>
 
-			<section class="portfolio">
-				<div class="portfolio__header">
-					<h2 class="portfolio__title">Portfólio</h2>
-					<p class="portfolio__sub-title">Available for new projects and collaborations. → Download profile and portfolio</p>
-				</div>
-				<br>
+	<footer class="footer-section">
+		<div class="footer-container">
+			<p>+55 54 99912-3279</p>
+			<p>Garopaba - SC - Brasil | E aonde você estiver!</p>
+			<p>rosaliaafotografia@gmail.com</p>
+			<a class="footer__dev" href="https://gitlab.com/w1446/rosalia-fotografia">
+				desenvolvido por Daniel Pedrotti | gitlab.com/devadarta <i class="fa fa-gitlab" aria-hidden="true"></i>
+			</a>
+		</div>
+	</footer>
+</body>
 
-				<nav class="portfolio__all portfolio__item">
-					<!--<a class="portfolio__item">TODOS</a>-->
-					<div class="portfolio__images">
-						<img src="galery/img4.jpg" alt="Photo" />
-					</div>
-					<div class="portfolio__images">
-						<img src="galery/img5.jpg" alt="Photo" />
-					</div>
-					<div class="portfolio__images">
-						<img src="galery/img6.jpg" alt="Photo" />
-					</div>
-					<div class="portfolio__images">
-						<img src="galery/img7.jpg" alt="Photo" />
-					</div>
-					<div class="portfolio__images">
-						<img src="galery/img8.jpg" alt="Photo" />
-					</div>
-				</nav>
-			</section>
-		</main>
-
-		<footer>
-			<p>Desenvolvido por @devadarta</p>
-		</footer>
-	</body>
-</html>
+</HTML>
