@@ -1,9 +1,18 @@
-# site-rosaliafotografia
-Site rosaliafotografia.com.br que apresenta a arte fotográfica de Rosália Benvegnú em um site minimalista e focado no conteúdo. 
+# Roslália Fotografia (WebSite)
+Um WebSite minimalista focado no conteúdo com o Portfólio fotográfico de Rosália Benvegnú
 
-Desenvolvido em HTML e CSS
+Esse projeto foi desenvolvido para aperfeiçoar e aprofundar meus estudos e conhecimentos em desenvolvimento de sites e nas ferramentas HTML CSS JS.
 
-Também é uma maneira de aperfeiçoar e aprofundar meus estudos em desenvolvimento de sites.
+# Veja o site em
+https://devadarta.github.io/site-rosaliafotografia/
 
-@rosaliafotografia
-@devadarta
+# Como usar
+```
+git clone https://github.com/devadarta/site-rosaliafotografia.git
+```
+
+# Screenshot
+![image](https://user-images.githubusercontent.com/93792785/163895031-e1a1cb58-277d-4972-9fae-fd35fcd3a935.png)
+
+# Sobre a Rosália
+[instagram.com/rosaliafotografia](https://instagram.com/rosaliafotografia)
